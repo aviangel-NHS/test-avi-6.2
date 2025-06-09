@@ -5,10 +5,8 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const browserSync = require('browser-sync');
 const clean = require('gulp-clean');
-const gulpSass = require('gulp-sass')
-const dartSass = require('sass-embedded')
+const sass = require('gulp-sass')(require('sass'));
 const nodemon = require('gulp-nodemon');
-const PluginError = require('plugin-error')
 
 // Local dependencies
 const config = require('./app/config');
@@ -21,23 +19,18 @@ function cleanPublic() {
   return gulp.src('public', { allowEmpty: true }).pipe(clean());
 }
 
-const sass = gulpSass(dartSass)
+sass.compiler = require('sass');
 
 // Compile SASS to CSS
-function compileStyles(done) {
+function compileStyles() {
   return gulp
     .src(['app/assets/sass/**/*.scss'])
-    .pipe(
-      sass()
-      .on('error', (error) => {
-        done(
-          new PluginError('compileCSS', error.messageFormatted, {
-            showProperties: false
-          })
-        )
-      })
-    )
+    .pipe(sass())
     .pipe(gulp.dest('public/css'))
+    .on('error', (err) => {
+      console.log(err);
+      process.exit(1);
+    });
 }
 
 // Compile JavaScript (with ES6 support)
