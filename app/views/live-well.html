@@ -1,0 +1,304 @@
+
+{% extends 'layout-nhsuk-health-a-to-z.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Live Well - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="health-a-to-z">Health A to Z</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="health-a-to-z">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Health A to Z
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<br>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Live Well</h1>
+      <p class="nhsuk-lede-text nhsuk-u-font-size-26">
+        NHS advice about healthy living, including eating a balanced diet, healthy weight, exercise, quitting smoking and drinking less alcohol.
+      </p>
+    </div>
+
+    <article>
+      <h2 class="nhsuk-u-visually-hidden">Top tasks in NHS services</h2>
+
+      <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+
+        <!-- 5 steps to mental wellbeing -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                5 steps to mental wellbeing
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Calculate your body mass index (BMI) -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                Calculate your body mass index (BMI)
+              </a>
+            </div>
+          </div>
+        </li>
+      
+      </ul>
+
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+
+        <!-- Healthy weight -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Healthy weight</a> </h2>
+              <p class="nhsuk-card__description">Information for adults and children about healthy weight, including advice to help you lose weight</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!-- Exercise -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Exercise</a> </h2>
+              <p class="nhsuk-card__description">Exercise guidelines and workouts to help improve your fitness and wellbeing</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!--  Sleep and tiredness -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Sleep and tiredness</a> </h2>
+              <p class="nhsuk-card__description">Reasons why you might feel tired and advice about what you can do to prevent tiredness</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!-- Eat well -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Eat well</a> </h2>
+              <p class="nhsuk-card__description">Information and advice about eating a healthy, balanced diet</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!-- Alcohol advice -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Alcohol advice</a> </h2>
+              <p class="nhsuk-card__description">Advice and support for cutting down the amount of alcohol you drink</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!-- Quit smoking  -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Quit smoking </a> </h2>
+              <p class="nhsuk-card__description">Information and advice to help you stop smoking</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!-- Addiction support -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Addiction support</a> </h2>
+              <p class="nhsuk-card__description">Help and support for addiction, including drug and gambling addictions</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+
+        <!-- Sexual health -->
+        <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card__content nhsuk-card__content--primary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Sexual health</a> </h2>
+              <p class="nhsuk-card__description">Information and advice about sexual health, including contraception and sexually transmitted infections (STIs)</p>
+              <svg class="nhsuk-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true" focusable="false">
+                <circle cx="13.333" cy="13.333" r="13.333" fill="" />
+                <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667">
+                  <path d="M15.438 13l-3.771 3.771" />
+                  <path data-name="Path" d="M11.667 9.229L15.438 13" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+
+        <!-- Bone health -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Bone health</a> </h2>
+              <p class="nhsuk-card__description">Advice about keeping your bones healthy</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Pain -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Pain</a> </h2>
+              <p class="nhsuk-card__description">Support and advice to help with your pain</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Healthy teeth and gums -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Healthy teeth and gums</a> </h2>
+              <p class="nhsuk-card__description">Information and advice about looking after your teeth and gums</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Seasonal health  -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">Seasonal health</a> </h2>
+              <p class="nhsuk-card__description">Advice about staying healthy during winter and summer</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- How to wash your hands -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">How to wash your hands</a> </h2>
+              <p class="nhsuk-card__description">Step-by-step guide to washing your hands</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- When your child is too ill for school  -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+            <div class="nhsuk-card__content nhsuk-card__content--secondary">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m"> <a class="nhsuk-card__link" href="">When your child is too ill for school</a> </h2>
+              <p class="nhsuk-card__description">Advice about when to keep your child off school or nursery</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

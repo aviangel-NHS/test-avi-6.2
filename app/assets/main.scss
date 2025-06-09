@@ -1,0 +1,140 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/list-border';
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below...
+///////////////////////////////////////////
+  
+
+.nhsuk-header__navigation-list {
+    justify-content: left;
+}
+
+.nhsuk-header__navigation-link[aria-current=page], .nhsuk-header__navigation-link[aria-current=true] {
+    box-shadow: inset 0 -4px #d8dde0;
+    text-decoration: none;
+}
+
+.nhsuk-header__navigation-link {
+    border-bottom: 4px solid transparent;
+}
+
+
+//NHS header - my account
+@media (min-width: 40.0625em) {
+.nhsuk-header__search {
+    float: left;
+    margin-left: 8px;
+}
+}
+
+.nhsuk-header__search {
+    position: relative;
+    text-align: right;
+}
+
+
+.nhsuk-account__login {
+    float: right;
+    margin-left: 1em;
+    margin-right: -16px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-account__login {
+        margin-right: -8px;
+    }
+}
+
+.nhsuk-account__login--link, .nhsuk-account__login--link:visited, .nhsuk-account__login--link:hover {
+    color: #fff;
+    padding: 1em;
+}
+
+
+.nhsuk-header__logo {
+    float: left;
+}
+
+@media (max-width: 40.0525em) {
+    .nhsuk-header__search-wrap {
+        clear: both;
+        padding-top: 1px;
+    }
+}
+
+// Sideways navigation
+.beta-nhsuk-navigation-sideways__item.is-active {
+    border-left: 4px solid #212b32;
+    color: #212b32;
+    margin-left: -12px;
+    padding-left: 8px;
+  }
+
+  .beta-nhsuk-navigation-sideways__item {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    list-style-type: none;
+  }
+  
+
+  //remove underline active state blue bar
+  .nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
+    background-color: #ffeb3b;
+    color: #212b32;
+}
+
+
+// sub hub links
+
+.beta-hub-key-links {
+    font-size: 22px;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.125em 0;
+}
+
+
+.beta-hub-key-links__list-item, .beta-hub-after-key-links>h2, .beta-hub-bottom-content>h2, h4, .nhsuk-heading-s {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.55556;
+    display: block;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+//related links
+.beta-hub-related-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+@media (min-width: 40.0625em) {
+    .beta-hub-key-links__list-item, .beta-hub-after-key-links>h2, .beta-hub-bottom-content>h2, h4, .nhsuk-heading-s {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 1.45455;
+    }
+}
+
+
+// app store link
+.app-apps-store-link {
+    margin: 8px;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.app-apps-store-link img {
+    width: 100%;
+}

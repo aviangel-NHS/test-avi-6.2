@@ -1,0 +1,101 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK Health A-Z categories exploration
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHS.UK prototype for designers
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+
+      <h2>Health A-Z hub ideas</h2>
+      <ul>
+        <!-- 
+        <li><a href="health-a-to-z_v1">Health A-Z categorised hub</a></li>
+        <li><a href="health-a-to-z_v2a">Health A-Z with multiple catorgaries</a> - version 2a</li>
+        <li><a href="health-a-to-z_v2b">Health A-Z with multiple catorgaries</a> - version 2b</li>
+        <li><a href="health-a-to-z_v2c">Health A-Z with multiple catorgaries</a> - version 2c</li>
+        <li><a href="health-a-to-z_v3">Health A-Z with multiple catorgaries</a> - version 3</li>
+        -->
+        <li><a href="health-a-to-z_v4">Health A-Z with multiple catorgaries</a> - version 4</li>
+        <li><a href="browse-by-parts-of-the-body">Browse by parts of the body</a> - version 4</li>
+        <li><a href="browse-by-parts-of-the-body/skin_option1">Skin</a> - no summary</li>
+        <li><a href="browse-by-parts-of-the-body/skin_option2">Skin</a> - with summary</li>
+        <li><a href="browse-by-parts-of-the-body/head-face-and-neck">Head face and neck</a></li>
+
+
+      </ul>
+
+      <h2>A to Z pages</h2>
+      <ul>
+        <li><a href="conditions-a-to-z-common">Browse A to Z</a> - with common conditions</li>
+        <li><a href="browse-by-a">Browse by A</a></li>
+        <li><a href="browse-by-b">Browse by B</a></li>
+        <li><a href="browse-by-c">Browse by C</a></li>
+        <!-- 
+        <li><a href="conditions_v1">Health A-Z all</a> (A-Z)</li>
+
+        <li><a href="conditions-d">Conditions D</a> (A-Z)</li>
+        <li><a href="conditions-e">Conditions E</a> (A-Z)</li>
+        <li><a href="conditions-f">Conditions F</a> (A-Z)</li>
+        <li><a href="conditions-g">Conditions G</a> (A-Z)</li>
+        <li><a href="conditions-h">Conditions H</a> (A-Z)</li>
+        <li><a href="conditions-i">Conditions I</a> (A-Z)</li>
+        <li><a href="conditions-j">Conditions J</a> (A-Z)</li>
+        <li><a href="conditions-k">Conditions K</a> (A-Z)</li>
+        <li><a href="conditions-l">Conditions L</a> (A-Z)</li>
+        <li><a href="conditions-m">Conditions M</a> (A-Z)</li>
+        <li><a href="conditions-n">Conditions N</a> (A-Z)</li>
+        <li><a href="conditions-o">Conditions O</a> (A-Z)</li>
+        <li><a href="conditions-p">Conditions P</a> (A-Z)</li>
+        <li><a href="conditions-q">Conditions Q</a> (A-Z)</li>
+        <li><a href="conditions-r">Conditions R</a> (A-Z)</li>
+        <li><a href="conditions-s">Conditions S</a> (A-Z)</li>
+        <li><a href="conditions-t">Conditions T</a> (A-Z)</li>
+        <li><a href="conditions-u">Conditions U</a> (A-Z)</li>
+        <li><a href="conditions-v">Conditions V</a> (A-Z)</li>
+        <li><a href="conditions-w">Conditions W</a> (A-Z)</li>
+        <li><a href="conditions-x">Conditions X</a> (A-Z)</li>
+        <li><a href="conditions-y">Conditions Y</a> (A-Z)</li>
+        <li><a href="conditions-z">Conditions Z</a> (A-Z)</li>
+        -->
+      </ul>
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

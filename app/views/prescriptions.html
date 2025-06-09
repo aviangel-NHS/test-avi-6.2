@@ -1,0 +1,121 @@
+{% extends 'layout-nhsuk-services.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+Prescriptions - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="nhs-services">NHS services</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="nhs-services">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      NHS services
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Prescriptions</h1>
+      <p class="nhsuk-lede-text nhsuk-u-font-size-26">
+        Find out about prescriptions including charges, repeat prescriptions and if you can get free prescriptions.
+      </p>
+    </div>
+
+<article>
+
+  
+      <section class="nhsuk-u-reading-width">
+        
+          
+            <div class="nhsuk-u-margin-bottom-6">
+              <ul class="nhsuk-hub-key-links beta-hub-key-links">
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/prescriptions/check-if-you-can-get-free-prescriptions/">
+                      Check if you can get free prescriptions
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/prescriptions/nhs-prescription-charges/">
+                      NHS prescription charges
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/prescriptions/save-money-with-a-prescription-prepayment-certificate-ppc/">
+                      Save money with a prescription prepayment certificate (PPC)
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/prescriptions/emergency-prescriptions/">
+                      Emergency prescriptions
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/prescriptions/how-to-order-a-repeat-prescription/">
+                      How to order a repeat prescription
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/prescriptions/collect-prescription-for-someone-else/">
+                      Collect a prescription for someone else
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+         
+      </section>
+  
+
+  <div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+    
+  </div>
+
+  
+
+
+
+    </article>
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends 'layout-nhsuk-services.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+Online services - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="nhs-services">NHS services</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="nhs-services">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      NHS services
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Online services</h1>
+      <p class="nhsuk-lede-text nhsuk-u-font-size-26">
+        Your GP health record includes information about the care you've had from your GP surgery.
+      </p>
+    </div>
+
+    <article>
+
+      
+
+  
+  
+  
+  
+  
+
+  
+      <section class="nhsuk-u-reading-width">
+        
+          
+            <div class="nhsuk-u-margin-bottom-6">
+              <ul class="nhsuk-hub-key-links beta-hub-key-links">
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/online-services/find-nhs-number/">
+                      Find your NHS number
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/online-services/view-your-test-results/">
+                      View your test results
+                    </a>
+                  </li>
+                
+                  <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+                    <a href="https://www.nhs.uk/nhs-services/online-services/nhs-login/">
+                      About NHS login
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+         
+      </section>
+  
+
+  <div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+    
+  </div>
+
+  
+    
+      <div class="nhsuk-u-margin-top-6  beta-hub-border-top ">
+  <div class="beta-hub-related-links-title">
+    <h2 class="nhsuk-heading-s ">Online tools to manage your health and wellbeing</h2>
+  </div>
+  <ul class="beta-hub-related-links">
+    
+      <li class="beta-hub-related-links__list-item">
+        <a href="https://www.nhs.uk/nhs-app/">
+          NHS App: access a range of NHS services and get your NHS COVID Pass
+        </a>
+        
+      </li>
+    
+  </ul>
+</div>
+
+    
+  
+
+
+
+    </article>
+
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}
